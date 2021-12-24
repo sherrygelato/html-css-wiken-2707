@@ -43,3 +43,8 @@ html>body {
 .menu-1>ul>li:hover>a>span::after {
     width: 100%;
 }
+
+.menu-1-2>ul>li>a>span::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
