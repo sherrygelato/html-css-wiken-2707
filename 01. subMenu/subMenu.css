@@ -1,0 +1,33 @@
+:root {
+    --site-width: 1000px;
+}
+
+.con {
+    width: var(--site-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.con-min-width {
+    min-width: var(--site-width);
+}
+
+.menu-bar {
+    background-color: white;
+}
+
+body {
+    background-color: lightGreen;
+}
+
+.menu-1>ul>li>div {
+    background-color: lightyellow;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.menu-1>ul>li:hover>div {
+    display: block;
+}
