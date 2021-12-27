@@ -1,0 +1,49 @@
+/* 폰트 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html>body {
+    font-family: "GmarketSansMedium";
+}
+
+/* lib */
+.con {
+    max-width: var(--site-width);
+}
+
+/* custom */
+:root {
+    --site-width: 1092px;
+}
+
+@media (max-width: 1091px) {
+    html>body .visible-on-pc {
+        display: none;
+    }
+}
+
+@media (min-width: 1092px) {
+    html>body .visible-on-mobile {
+        display: none;
+    }
+}
+
+/* flex와 display가 충돌할 때 이렇게 해도 됨
+@media (max-width: 1091px) {
+    .visible-on-pc {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1092px) {
+    .visible-on-mobile {
+        display: none !important;
+    }
+}
+
+
+*/
