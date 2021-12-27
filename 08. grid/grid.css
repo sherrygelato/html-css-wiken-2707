@@ -1,0 +1,8 @@
+.section-prod-list>.container>.grid>li>a {
+    display: block;
+}
+
+.section-prod-list>.container>.grid>li>a>img {
+    width: 100%;
+    display: block;
+}
