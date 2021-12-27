@@ -1,0 +1,54 @@
+/* 폰트 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html>body {
+    font-family: "GmarketSansMedium";
+}
+
+/* lib */
+.con {
+    width: var(--site-width);
+}
+
+.con-min-width {
+    min-width: var(--site-width);
+}
+
+/* custom */
+:root {
+    --site-width: 800px;
+    --side-bar-width: 64px;
+    --top-bar-height: 50px;
+}
+
+.top-bar {
+    height: var(--top-bar-height);
+    background-color: lightyellow;
+    position: fixed;
+    left: var(--side-bar-width);
+    right: 0;
+    top: 0;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--side-bar-width);
+    height: 100%;
+}
+
+.side-bar>img {
+    width: 100%;
+}
+
+html>body {
+    margin-left: var(--side-bar-width);
+    margin-top: var(--top-bar-height);
+    height: 1000px;
+}
