@@ -1,0 +1,57 @@
+/* 폰트 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html>body {
+    font-family: "GmarketSansMedium";
+}
+
+/* lib */
+.con {
+    max-width: var(--site-width);
+}
+
+/* custom */
+:root {
+    --site-width: 800px;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.top-bar:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.menu-1>ul>li>a {
+    display: block;
+    padding: 10px;
+}
+
+.top-bar__sub {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+    transition: height .2s 0s;
+    /*상단바 올라갈 때 즉각반응*/
+}
+
+:hover>.top-bar__sub {
+    height: 100px;
+    transition: height .2s .2s;
+    /*상단바 내려올 때 딜레이*/
+}
