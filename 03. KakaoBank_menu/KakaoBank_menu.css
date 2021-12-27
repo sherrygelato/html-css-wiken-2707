@@ -50,7 +50,8 @@ body {
     display: none;
     left: 0;
     width: 100%;
-    transform: translateY(1px); // 현재 있는 위치에서 조정하기, 여기서 top으로 했다간 망함, 왜냐, 메뉴가 border에 겹쳐있기 때문임
+    transform: translateY(1px);
+    /* 현재 있는 위치에서 조정하기, 여기서 top으로 했다간 망함, 왜냐, 메뉴가 border에 겹쳐있기 때문임*/
     background-color: white;
     padding-bottom: 50px;
 }
