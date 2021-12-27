@@ -24,14 +24,22 @@ html>body {
     --site-width: 800px;
 }
 
-@media (min-width:900px) {
+@media (min-width:1280px) {
     .mobile-top-bar {
         display: none;
     }
 }
 
-@media (max-width:899px) {
+@media (max-width:1279px) {
+    .header-top-bar {
+        display: none;
+    }
+
     .pc-top-bar {
         display: none;
     }
+}
+
+.logo {
+    width: 120px;
 }

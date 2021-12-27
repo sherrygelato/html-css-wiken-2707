@@ -1,14 +1,53 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 
-<header class="pc-top-bar bg-black text-white">
+<header class="header-top-bar bg-black text-white">
   <div class="container bg-red-500 mx-auto">
-    적응형: log 요기는 화면 너비에 반응하지 않고 어느 순간 확 줄어든다.
+    적응형: 화면 너비에 반응하지 않고 어느 순간 확 줄어든다.
   </div>
   <div style="width:900px; margin:0 auto; background-color:blue;">
-    고정형: log 요기는 화면 너비에 따라 반응하지 않고 줄어들지 않는다.
+    고정형: 화면 너비에 따라 반응하지 않고 줄어들지 않는다.
   </div>
   <div style="max-width:1200px; margin:0 auto; background-color:green;">
-    반응형: log 요기는 화면 너비에 따라 1200px 기준으로 반응하는데, 현재 트렌드는 적응형이다.
+    반응형: 화면 너비에 따라 1200px 기준으로 반응하는데, 현재 트렌드는 적응형이다.
   </div>
 </header>
+
+<header class="pc-top-bar bg-black text-white">
+  <div class="container mx-auto">
+    <div class="flex items-center">
+      <div class="flex-1"></div>
+      <a href="#" class="logo">
+        <img src="https://cdn.imweb.me/thumbnail/20200721/408847c5dabec.png" alt="">
+      </a>
+      <div class="flex-1 flex justify-end items-center">
+        <nav>
+          <ul class="flex">
+            <li><a href="#" class="block p-4">Login</a></li>
+            <li><a href="#" class="block p-4">Join</a></li>
+            <li><a href="#" class="block p-4">Cart</a></li>
+            <li><a href="#" class="block p-4">Recruit</a></li>
+          </ul>
+        </nav>
+        <div class="btn-reserve p-4 text-green-400">
+          <a>
+            <span>
+              양조장 예약
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <nav class="menu-2">
+        <ul class="flex justify-center">
+          <li><a href="#" class="block p-4">Experience</a></li>
+          <li><a href="#" class="block p-4">Collaboration</a></li>
+          <li><a href="#" class="block p-4">Shop</a></li>
+          <li><a href="#" class="block p-4">Brewery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
 <header class="mobile-top-bar bg-black text-white">모바일 탑바</header>
