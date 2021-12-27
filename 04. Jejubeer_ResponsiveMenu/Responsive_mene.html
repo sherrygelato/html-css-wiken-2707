@@ -1,4 +1,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 
-<header class="pc-top-bar bg-black text-white">PC 탑바</header>
+<header class="pc-top-bar bg-black text-white">
+  <div class="container bg-red-500 mx-auto">
+    적응형: log 요기는 화면 너비에 반응하지 않고 어느 순간 확 줄어든다.
+  </div>
+  <div style="width:900px; margin:0 auto; background-color:blue;">
+    고정형: log 요기는 화면 너비에 따라 반응하지 않고 줄어들지 않는다.
+  </div>
+  <div style="max-width:1200px; margin:0 auto; background-color:green;">
+    반응형: log 요기는 화면 너비에 따라 1200px 기준으로 반응하는데, 현재 트렌드는 적응형이다.
+  </div>
+</header>
 <header class="mobile-top-bar bg-black text-white">모바일 탑바</header>
