@@ -56,6 +56,26 @@ body {
     padding-bottom: 50px;
 }
 
+.menu-1>ul>li>a {
+    position: relative;
+}
+
+.menu-1>ul>li>a::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    /* bottom border 선 위에 밑줄 ㅡ 위에 있고 그 선 중간에 밑줄 하기 위함*/
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: red;
+    transition: width 0.3s;
+}
+
+.menu-1>ul>li:hover>a::after {
+    width: 100%;
+}
+
 .menu-1>ul>li:hover>div {
     display: block;
 }
